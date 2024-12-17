@@ -29,7 +29,7 @@ markup = create_schedule_keyboard()
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = create_schedule_keyboard()
-    bot.send_message(message.chat.id, "Привет! Нажми на кнопку, чтобы получить расписание:", reply_markup=markup)
+    bot.send_message(message.chat.id, "Мы - онлайн-школа, стремящаяся обеспечить наших учеников удобными и эффективными инструментами для обучения. Нажми на кнопку, чтобы получить расписание:", reply_markup=markup)
 
 
 @bot.message_handler(func=lambda message: message.text == "Получить расписание")
